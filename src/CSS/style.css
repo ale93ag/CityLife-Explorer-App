@@ -1,0 +1,133 @@
+body {
+    font-family: 'Oregano';
+    margin: 0; /* Rimuove il margine predefinito dal body */
+    background-color: rgb(229, 216, 199);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Allinea i figli verticalmente al centro */
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    color: rgb(167, 59, 59);
+    margin: 0; /* Rimuove il margine predefinito dall'elemento h1 */
+}
+
+h2 {
+    margin-top: 10px; /* Aggiungi uno spazio tra h1 e h2 */
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Spazio tra l'immagine e l'elemento h1 */
+    border-radius: 20px;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Assicura che il carosello occupi l'intera larghezza del suo contenitore */
+    transition: transform 2s ease-in-out; /* Aggiunge una transizione per una scorrevolezza più fluida */
+}
+.carousel img {
+    width: 1200px; /* Assicura che le immagini si adattino alla larghezza del contenitore */
+    height: 530px; /* Mantiene l'aspetto proporzionato delle immagini */
+    opacity: 0.7; /* Imposta l'opacità desiderata (0.7 per il 70%) */
+    position: relative; /* Per posizionare altri elementi sopra le immagini */
+    z-index: 1; /* Imposta lo z-index in modo che gli altri elementi possano essere posizionati sopra */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 158px;
+}
+.input-container {
+    text-align: center; /* Centra l'input orizzontalmente */
+    margin-top: 400px; /* Aggiungi margine sopra l'input */
+    position: absolute; /* Imposta la posizione assoluta */
+    top: 180px; /* Posiziona l'input all'inizio del div genitore */
+    left: 520px; /* Posiziona l'input all'inizio del div genitore */
+    width: 500px; /* Imposta la larghezza al 100% del div genitore */
+    z-index: 2; /* Assicura che l'input sia sopra il div delle immagini */
+}
+
+.input-container input {
+    width: 400px; /* Imposta la larghezza dell'input */
+    height: 40px;
+    padding: 10px; /* Aggiungi spazio interno all'input */
+    font-size: 16px; /* Imposta la dimensione del carattere dell'input */
+    border: 1px solid rgb(220, 171, 79); /* Aggiungi un bordo sottile all'input */
+    border-radius: 5px; /* Aggiungi un angolo arrotondato all'input */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Aggiungi una leggera ombra */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+input:hover{
+    font-weight: bold;
+    border: none;
+}
+
+.btn-container {
+    text-align: center; /* Centra l'input orizzontalmente */
+    margin-top: 450px; /* Aggiungi margine sopra l'input */
+    position: absolute; /* Imposta la posizione assoluta */
+    top: 200px; /* Posiziona l'input all'inizio del div genitore */
+    left: 720px; /* Posiziona l'input all'inizio del div genitore */
+    width: 100px; /* Imposta la larghezza al 100% del div genitore */
+    z-index: 2; /* Assicura che l'input sia sopra il div delle immagini */
+}
+    button{
+    width: 100px; /* Imposta la larghezza dell'input */
+    height: 40px;
+    padding: 10px; /* Aggiungi spazio interno all'input */
+    font-size: 16px; /* Imposta la dimensione del carattere dell'input */
+    border: 1px solid rgb(220, 171, 79); /* Aggiungi un bordo sottile all'input */
+    border-radius: 5px; /* Aggiungi un angolo arrotondato all'input */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Aggiungi una leggera ombra */
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+button:hover{
+    font-size: 20px;
+    height: 45px;
+}
+.containerAllElement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.descriptionElement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.category{
+    color: rgb(167, 59, 59);
+    font-weight: bold;
+    font-size: 20px;
+}
+.summary {
+    color:rgb(61, 61, 151);
+}
+.score{
+    font-size: 80px;
+}
+.nameScore{
+    font-weight: bold
+
+}
+.container-audio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
