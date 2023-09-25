@@ -129,8 +129,9 @@ button:hover{
 }
 .container-audio {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 10px; /* Imposta la distanza dal top */
+    left: 10px; /* Imposta la distanza da sinistra */
+    z-index: 999; /* Assicura che sia sopra gli altri elementi */
 }
 .name {
     color: rgb(167, 59, 59);; /* Cambia il colore del nome */
