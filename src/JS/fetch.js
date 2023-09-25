@@ -40,7 +40,7 @@ const getData = async function () {
     dataScore.categories.forEach((x) => {
       category.insertAdjacentHTML(
         "afterbegin",
-        `<h3>${x.name}<br> ${x.score_out_of_10.toFixed(1)}<br><h3>`
+        `<h3><span class="name">${x.name}</span> <span class="scores">${x.score_out_of_10.toFixed(1)}</span><h3>`
       );
 
 

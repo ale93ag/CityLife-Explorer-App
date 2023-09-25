@@ -121,6 +121,7 @@ button:hover{
 }
 .score{
     font-size: 80px;
+    margin-left: 0;
 }
 .nameScore{
     font-weight: bold
@@ -131,3 +132,14 @@ button:hover{
     bottom: 0;
     left: 0;
 }
+.name {
+    color: rgb(167, 59, 59);; /* Cambia il colore del nome */
+    font-weight: bold; /* Rendi il nome in grassetto */
+    margin-right: 13px;
+  }
+  
+  /* Stile per x.score */
+  .scores {
+    color: black; /* Cambia il colore del punteggio */
+    font-weight: bold;
+  }
