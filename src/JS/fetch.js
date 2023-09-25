@@ -93,9 +93,7 @@ btn.addEventListener("click", function () {
 
 
 
-  // TODO: 
-  // modificare design
-  // 
+
   
 
 
