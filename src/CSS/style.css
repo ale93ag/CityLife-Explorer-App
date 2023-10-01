@@ -1,45 +1,49 @@
 body {
     font-family: 'Oregano';
-    margin: 0; /* Rimuove il margine predefinito dal body */
+    margin: 0;
     background-color: rgb(229, 216, 199);
 }
 
 header {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Allinea i figli verticalmente al centro */
+    align-items: center;
     text-align: center;
 }
 
 h1 {
     font-size: 70px;
     color: rgb(167, 59, 59);
-    margin: 0; /* Rimuove il margine predefinito dall'elemento h1 */
+    margin: 0;
 }
 
 h2 {
-    margin-top: 10px; /* Aggiungi uno spazio tra h1 e h2 */
+    margin-top: 10px;
 }
-
-
+h3 {
+    font-size: 50px;
+    text-align: center;
+}
 img {
     width: 50px;
     height: 50px;
-    margin-right: 10px; /* Spazio tra l'immagine e l'elemento h1 */
+    margin-right: 10px;
     border-radius: 20px;
 }
+
 .carousel {
     display: flex;
     overflow: hidden;
-    width: 100%; /* Assicura che il carosello occupi l'intera larghezza del suo contenitore */
-    transition: transform 2s ease-in-out; /* Aggiunge una transizione per una scorrevolezza più fluida */
+    width: 100%;
+    transition: transform 2s ease-in-out;
 }
+
 .carousel img {
-    width: 1200px; /* Assicura che le immagini si adattino alla larghezza del contenitore */
-    height: 530px; /* Mantiene l'aspetto proporzionato delle immagini */
-    opacity: 0.7; /* Imposta l'opacità desiderata (0.7 per il 70%) */
-    position: relative; /* Per posizionare altri elementi sopra le immagini */
-    z-index: 1; /* Imposta lo z-index in modo che gli altri elementi possano essere posizionati sopra */
+    width: 1200px;
+    height: 530px;
+    opacity: 0.7;
+    position: relative;
+    z-index: 1;
 }
 
 main {
@@ -49,114 +53,125 @@ main {
     align-items: center;
     margin-left: 158px;
 }
+
 .input-container {
-    text-align: center; /* Centra l'input orizzontalmente */
-    margin-top: 400px; /* Aggiungi margine sopra l'input */
-    position: absolute; /* Imposta la posizione assoluta */
-    top: 180px; /* Posiziona l'input all'inizio del div genitore */
-    left: 520px; /* Posiziona l'input all'inizio del div genitore */
-    width: 500px; /* Imposta la larghezza al 100% del div genitore */
-    z-index: 2; /* Assicura che l'input sia sopra il div delle immagini */
+    text-align: center;
+    margin-top: 400px;
+    position: absolute;
+    top: 180px;
+    left: 520px;
+    width: 500px;
+    z-index: 2;
 }
 
 .input-container input {
-    width: 400px; /* Imposta la larghezza dell'input */
+    width: 400px;
     height: 40px;
-    padding: 10px; /* Aggiungi spazio interno all'input */
-    font-size: 16px; /* Imposta la dimensione del carattere dell'input */
-    border: 1px solid rgb(220, 171, 79); /* Aggiungi un bordo sottile all'input */
-    border-radius: 5px; /* Aggiungi un angolo arrotondato all'input */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Aggiungi una leggera ombra */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(220, 171, 79);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.7);
 }
-input:hover{
+
+input:hover {
     font-weight: bold;
     border: none;
 }
 
 .btn-container {
-    text-align: center; /* Centra l'input orizzontalmente */
-    margin-top: 450px; /* Aggiungi margine sopra l'input */
-    position: absolute; /* Imposta la posizione assoluta */
-    top: 200px; /* Posiziona l'input all'inizio del div genitore */
-    left: 720px; /* Posiziona l'input all'inizio del div genitore */
-    width: 100px; /* Imposta la larghezza al 100% del div genitore */
-    z-index: 2; /* Assicura che l'input sia sopra il div delle immagini */
+    text-align: center;
+    margin-top: 450px;
+    position: absolute;
+    top: 200px;
+    left: 720px;
+    width: 100px;
+    z-index: 2;
 }
-    button{
-    width: 100px; /* Imposta la larghezza dell'input */
+
+button {
+    width: 100px;
     height: 40px;
-    padding: 10px; /* Aggiungi spazio interno all'input */
-    font-size: 16px; /* Imposta la dimensione del carattere dell'input */
-    border: 1px solid rgb(220, 171, 79); /* Aggiungi un bordo sottile all'input */
-    border-radius: 5px; /* Aggiungi un angolo arrotondato all'input */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Aggiungi una leggera ombra */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(220, 171, 79);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     font-size: 20px;
     height: 45px;
 }
-.containerAllElement{
+
+.containerAllElement {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.descriptionElement{
+
+.descriptionElement {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-   
 }
-.category{
+
+.category {
     color: rgb(167, 59, 59);
     font-weight: bold;
     font-size: 20px;
 }
+
 .summary {
-    color:rgb(61, 61, 151);
+    color: rgb(61, 61, 151);
 }
-.score{
+
+.score {
     font-size: 120px;
     margin-left: 0;
 }
-.nameScore{
-    font-weight: bold
 
+.nameScore {
+    font-weight: bold;
 }
+
 .container-audio {
     position: fixed;
-    top: 10px; /* Imposta la distanza dal top */
-    left: 10px; /* Imposta la distanza da sinistra */
-    z-index: 999; /* Assicura che sia sopra gli altri elementi */
+    top: 10px;
+    left: 10px;
+    z-index: 999;
 }
+
 .name {
-    color: rgb(167, 59, 59);; /* Cambia il colore del nome */
-    font-weight: bold; /* Rendi il nome in grassetto */
-    margin-right: 13px;
-  }
-  
-  /* Stile per x.score */
-  .scores {
-    color: black; /* Cambia il colore del punteggio */
+    color: rgb(167, 59, 59);
     font-weight: bold;
-  }
-  @keyframes pulse {
+    margin-right: 13px;
+}
+
+.scores {
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
-  }
-  
-  .pulse {
+}
+
+.pulse {
     animation: pulse 1.5s infinite;
-  }
-  .loading {
-    display: none; /* Inizialmente nascosto */
-    /* Aggiungi stili di posizionamento e aspetto desiderati */
-  }
+}
+
+.loading {
+    display: none;
+}
+
   
   
   

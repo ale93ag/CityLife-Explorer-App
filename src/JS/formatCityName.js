@@ -1,8 +1,9 @@
-export {formatCityName}
+// formatCityName.js
+
 // *****funzione per formattare le parole prima della ricerca*****
-let formatCityName = function (nome) {
-    nome = nome.toLowerCase();
-    nome = nome.trim();
-    nome = nome.replaceAll(" ", "-");
-    return nome;
-  };
+export function formatCityName(nome) {
+  nome = nome.toLowerCase();
+  nome = nome.trim();
+  nome = nome.replaceAll(" ", "-");
+  return nome;
+}

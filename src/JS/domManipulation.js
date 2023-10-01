@@ -1,9 +1,11 @@
+// domManipulation.js
+
 import { formatCityName } from "./formatCityName.js";
-import { getData } from "./fetchData.js"; // Importa la funzione getData dal modulo fetchData.js
+import { getData, handleDataError } from "./fetch.js"; // Importa la nuova funzione handleDataError
+import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
 
 let city = "";
 
-// Dichiarazione delle variabili
 const summary = document.querySelector(".summary");
 const category = document.querySelector(".category");
 const input = document.querySelector("input");
@@ -16,40 +18,35 @@ let clearCard = function () {
   category.innerHTML = "";
   nameScore.innerHTML = "";
   score.innerHTML = "";
-  score.classList.remove("pulse"); // Rimuovi la classe 'pulse' per interrompere l'animazione
-};
-
-// Funzioni per controllare gli errori
-const errorCatching = (summary, warningMessage) => {
-  summary.innerHTML = `<p>${warningMessage}</p>`;
-  return warningMessage;
-};
-
-const errorVoid = () => {
-  if (!input.value) {
-    errorCatching(
-      summary,
-      `<h1>SCRIVI UNA CITTA'</h1>`
-    );
-    clearCard();
-  }
+  score.classList.remove("pulse");
 };
 
 btn.addEventListener("click", async function () {
   city = formatCityName(input.value);
-  errorVoid(input);
 
-  // Utilizza la funzione importata getData dal modulo fetchData.js
+  if (!input.value) {
+    // Utilizza la nuova funzione handleDataError per gestire l'errore
+    handleDataError(summary, "<h3>SCRIVI UNA CITTA'</h3>");
+    clearCard();
+    return; // Interrompi l'esecuzione se non c'è un input valido
+  }
+
+  showLoadingIndicator();
+
   const dataScore = await getData(city);
 
-  // Gestisci i dati ottenuti
-  if (dataScore) {
-    // Mostra i dati
+  hideLoadingIndicator();
+
+  if (dataScore.error) {
+    // Utilizza la nuova funzione handleDataError per gestire l'errore
+    handleDataError(summary, dataScore.error);
+    clearCard();
+  } else {
     summary.innerHTML = `<h2><p>${dataScore.summary}</p></h2>`;
     category.innerHTML = "";
     nameScore.innerHTML = "CITY SCORE";
     score.innerHTML = dataScore.teleport_city_score.toFixed(2);
-    score.classList.add("pulse"); // Aggiungi la classe 'pulse' per l'animazione
+    score.classList.add("pulse");
 
     dataScore.categories.forEach((x) => {
       category.insertAdjacentHTML(
@@ -75,14 +72,10 @@ btn.addEventListener("click", async function () {
 
       main.appendChild(containerAllElement);
     });
-  } else {
-    errorCatching(
-      summary,
-      `<h3>Città non trovata. Controlla eventuali errori di battitura. <br> Ricorda di scrivere il nome della città in inglese.<br>  Se nessuno di questi problemi è presente, forse la città non è presente nel nostro database..<h3>`
-    );
-    clearCard();
   }
 });
+
+
 
 
 
