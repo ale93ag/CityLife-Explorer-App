@@ -153,5 +153,10 @@ button:hover{
   .pulse {
     animation: pulse 1.5s infinite;
   }
+  .loading {
+    display: none; /* Inizialmente nascosto */
+    /* Aggiungi stili di posizionamento e aspetto desiderati */
+  }
+  
   
   
