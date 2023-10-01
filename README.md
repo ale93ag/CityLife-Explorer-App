@@ -25,7 +25,7 @@ git clone https://github.com/ale93ag/CityLife-Explorer-App.git
 
 ## Demo
 
-Puoi provare una demo dell'applicazione [qui]
+Puoi provare una demo dell'applicazione qui [ https://ale93ag.github.io/CityLife-Explorer-App/]
 
 
 
