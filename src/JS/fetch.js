@@ -27,7 +27,7 @@ const getData = async function () {
   const dataScore = await getScore.json();
 
   // DOM MANIPULATION
-  if (getScore.status != 404) {
+  if (getScore.status === 200) {
     summary.innerHTML = `<h2><p>${dataScore.summary}</p></h2>`;
     category.innerHTML = "";
     nameScore.innerHTML = "CITY SCORE";
