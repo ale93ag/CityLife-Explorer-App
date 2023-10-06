@@ -8,7 +8,7 @@ export async function fetchData(city) {
       );
   
       if (!getScore.ok) {
-        return { error: "<h3>Città non trovata. Controllare se c'è un errore di battitura. Ricordate che dovete usare i nomi delle città in inglese. Se nessuno di questi problemi è presente, forse la città non è presente nel nostro database.</h3>" };
+        return { error: "<h3>Città non trovata. Controllare se c'è un errore di battitura.Ricordate che dovete usare i nomi delle città in inglese. Se nessuno di questi problemi è presente, forse la città non è presente nel nostro database.</h3>" };
       }
   
       const dataScore = await getScore.json();

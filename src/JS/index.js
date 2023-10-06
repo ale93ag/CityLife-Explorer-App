@@ -1,6 +1,10 @@
+import '../CSS/style.css'
+import {fetchData, handleDataError} from './fetch.js'
+import { formatCityName } from "./formatCityName.js";
+import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
 // Aggiungo qui gli URL delle  immagini
-const carouselInner = document.querySelector('.carousel-inner');
-const images = [
+export const carouselInner = document.querySelector('.carousel-inner');
+export const images = [
     './src/Img/citta1.jpg',
     './src/Img/citta2.jpg',
     './src/Img/citta3.jpg',
@@ -14,9 +18,9 @@ const images = [
     
     
 ];
-let currentImageIndex = 0;
+export let currentImageIndex = 0;
 
-function showNextImage() {
+export function showNextImage() {
     // Rimuove l'immagine attuale dal carosello
     carouselInner.innerHTML = '';
 
