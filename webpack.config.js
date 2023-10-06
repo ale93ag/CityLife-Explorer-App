@@ -9,15 +9,22 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'optimised.js'
     },
-    module: {rules:[{
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader']
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(jpg|png|jpeg)$/i,
+                type: 'asset/resource'
+            },
+            {
+                test: /\.(mp3|wav)$/i, // Aggiunta una nuova regola per i file audio
+                type: 'asset/resource'
+            }
+        ]
     },
-    {
-        test:/\.(jpg|png|jpeg)$/i,
-        type:'asset/resource'
-    }
-    ] },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'CityLife Explorer',
