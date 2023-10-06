@@ -1,23 +1,16 @@
-import '../CSS/style.css'
-import {fetchData, handleDataError} from './fetch.js'
-import { formatCityName } from "./formatCityName.js";
-import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
-// Aggiungo qui gli URL delle  immagini
+// imageData.js
+
+// Rimuovi l'import duplicato di style.css
+// import '../CSS/style.css';
+
+// Aggiorna gli import delle immagini utilizzando 'require'
 export const carouselInner = document.querySelector('.carousel-inner');
 export const images = [
-    './src/Img/citta1.jpg',
-    './src/Img/citta2.jpg',
-    './src/Img/citta3.jpg',
-    './src/Img/citta4.jpg',
-    './src/Img/citta5.jpg',
-    './src/Img/citta6.jpg',
-    './src/Img/citta8.jpg',
-    './src/Img/citta9.jpg',
-    './src/Img/citta10.jpg',
-    './src/Img/citta11.jpg'
-    
-    
+    require('../Img/citta1.jpg'),
+    require('../Img/citta2.jpg'),
+    // Aggiungi gli altri percorsi delle immagini come sopra
 ];
+
 export let currentImageIndex = 0;
 
 export function showNextImage() {
@@ -39,8 +32,6 @@ setInterval(showNextImage, 3500);
 
 // Eseguo la funzione showNextImage una volta all'inizio
 showNextImage();
-
-
 
 
 

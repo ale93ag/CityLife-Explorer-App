@@ -1,9 +1,11 @@
 // domManipulation.js
-import '../CSS/style.css'
+import '../CSS/style.css';
 import { formatCityName } from "./formatCityName.js";
 import { fetchData, handleDataError } from "./fetch.js";
 import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
-import {carouselInner, images, currentImageIndex, showNextImage} from "./index.js"
+
+// Importa le variabili e le funzioni da imageData.js
+import { carouselInner, images, currentImageIndex, showNextImage } from "./imageData.js";
 
 let city = "";
 const summary = document.querySelector(".summary");
@@ -83,6 +85,7 @@ input.addEventListener("keydown", function (event) {
     handleInputAndSubmit();
   }
 });
+
 
 
 
