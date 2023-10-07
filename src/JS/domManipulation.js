@@ -1,11 +1,8 @@
 // domManipulation.js
-import '../CSS/style.css';
+
 import { formatCityName } from "./formatCityName.js";
 import { fetchData, handleDataError } from "./fetch.js";
 import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
-
-// Importa le variabili e le funzioni da imageData.js
-import { carouselInner, images, currentImageIndex, showNextImage } from "./imageData.js";
 
 let city = "";
 const summary = document.querySelector(".summary");
@@ -58,7 +55,7 @@ const handleInputAndSubmit = async () => {
   city = formatCityName(input.value);
 
   if (!city) {
-    handleDataError(summary, "<h3>SCRIVI UNA CITTA'</h3>");
+    handleDataError(summary, "<h3>SCRIVI UNA CITTA'</h3");
     clearCard();
     return;
   }
@@ -85,7 +82,6 @@ input.addEventListener("keydown", function (event) {
     handleInputAndSubmit();
   }
 });
-
 
 
 
