@@ -1,7 +1,4 @@
-
-import {fetchData, handleDataError} from './fetch.js'
-import { formatCityName } from "./formatCityName.js";
-import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
+//index.js
 // Aggiungo qui gli URL delle  immagini
 export const carouselInner = document.querySelector('.carousel-inner');
 export const images = [
@@ -16,9 +13,6 @@ export const images = [
     './src/Img/citta9.jpg',
     './src/Img/citta10.jpg',
     './src/Img/citta11.jpg'
-
-    
-    
 ];
 export let currentImageIndex = 0;
 

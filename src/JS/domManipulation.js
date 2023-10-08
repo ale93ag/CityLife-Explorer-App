@@ -1,8 +1,10 @@
 // domManipulation.js
 
-import { formatCityName } from "./formatCityName.js";
+import {formatCityName}  from "./formatCityName.js";
 import { fetchData, handleDataError } from "./fetch.js";
 import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
+import { carouselInner, images, currentImageIndex, showNextImage } from "./index.js";
+
 
 let city = "";
 const summary = document.querySelector(".summary");
@@ -73,6 +75,7 @@ const handleInputAndSubmit = async () => {
     displayCityInfo(dataScore);
   }
 };
+
 
 btn.addEventListener("click", handleInputAndSubmit);
 
