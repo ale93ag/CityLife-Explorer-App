@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { template } = require('lodash');
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     entry: {
         domManipulation: './src/JS/domManipulation.js',
@@ -25,6 +26,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'CityLife Explorer',
             template: './index.html'
+        }),
+        new CopyWebpackPlugin({
+            patterns: [{
+                from:'./src/Img',
+                to: './src/Img'
+            }]
         })
     ],
     devServer: {
