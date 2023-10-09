@@ -17,13 +17,4 @@ CityLife Explorer è un'applicazione web che ti permette di scoprire il punteggi
 3. Fai clic su "Cerca".
 4. CityLife Explorer recupererà i dati relativi alla città e visualizzerà il punteggio totale e le informazioni dettagliate.
 
-## Clonare il progetto
-
-Se desideri contribuire o eseguire il progetto localmente, puoi clonare questo repository GitHub. Ecco come farlo:
-
-git clone https://github.com/ale93ag/CityLife-Explorer-App.git
-
-## Demo
-
-Puoi provare una demo dell'applicazione qui [ https://ale93ag.github.io/CityLife-Explorer-App/]
 
