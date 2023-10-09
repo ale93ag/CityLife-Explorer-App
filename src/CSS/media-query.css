@@ -1,0 +1,59 @@
+/* Stile predefinito */
+
+@media screen and (max-width: 768px) {
+    /* Quando la larghezza dello schermo è di 768 pixel o meno (schermo mobile o tablet) */
+  
+    header {
+      h1 {
+        font-size: 40px; /* Riduci la dimensione del carattere h1 */
+      }
+    }
+  
+    img {
+      width: 30px; /* Riduci le dimensioni delle immagini nell'header */
+      height: 30px;
+    }
+  
+    .carousel img {
+      width: 80%; /* Riduci la larghezza delle immagini nel carosello */
+      height: auto; /* Mantieni l'aspetto proporzionato delle immagini */
+    }
+  
+    .input-container {
+      margin-top: 20px; /* Riduci il margine sopra l'input */
+      width: 100%; /* Usa tutta la larghezza disponibile */
+      position: relative; /* Cambia la posizione a relativa */
+      top: auto; /* Resetta la posizione superiore */
+      left: auto; /* Resetta la posizione sinistra */
+      text-align: center; /* Centra il testo orizzontalmente */
+    }
+  
+    .input-container input {
+      width: 100%; /* Usa tutta la larghezza disponibile per l'input */
+    }
+  
+    .btn-container {
+      margin-top: 20px; /* Riduci il margine sopra il pulsante */
+      width: 100%; /* Usa tutta la larghezza disponibile */
+      position: relative; /* Cambia la posizione a relativa */
+      top: auto; /* Resetta la posizione superiore */
+      left: auto; /* Resetta la posizione sinistra */
+      text-align: center; /* Centra il testo orizzontalmente */
+    }
+  
+    button {
+      width: 100%; /* Usa tutta la larghezza disponibile per il pulsante */
+      font-size: 16px; /* Ripristina la dimensione del carattere del pulsante */
+      height: 40px; /* Ripristina l'altezza del pulsante */
+    }
+  
+    .summary,
+    .category {
+      text-align: center; /* Centra il testo orizzontalmente */
+    }
+  
+    /* Aggiungi il seguente stile per centrare le category */
+    .category {
+      margin-top: 10px; /* Aggiungi spazio sopra le category */
+    }
+  }
