@@ -1,4 +1,4 @@
- CityLife Explorer
+# CityLife Explorer
 
 CityLife Explorer è un'applicazione web che ti permette di scoprire il punteggio totale di una città in base a vari indicatori come l'inquinamento, la velocità di Internet, la tolleranza ed altro ancora. Basta inserire il nome della città in inglese, e CityLife Explorer si occupa del resto!
 
