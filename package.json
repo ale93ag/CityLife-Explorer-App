@@ -71,7 +71,6 @@
     "core-js-compat": "^3.33.0",
     "core-util-is": "^1.0.3",
     "cross-spawn": "^7.0.3",
-    "css-loader": "^6.8.1",
     "css-select": "^4.3.0",
     "css-what": "^6.1.0",
     "cssesc": "^3.0.0",
@@ -156,7 +155,6 @@
     "hpack.js": "^2.1.6",
     "html-entities": "^2.4.0",
     "html-minifier-terser": "^6.1.0",
-    "html-webpack-plugin": "^5.5.3",
     "htmlparser2": "^6.1.0",
     "http-deceiver": "^1.2.7",
     "http-errors": "^2.0.0",
@@ -333,7 +331,6 @@
     "strip-ansi": "^6.0.1",
     "strip-final-newline": "^2.0.0",
     "strip-json-comments": "^2.0.1",
-    "style-loader": "^3.3.3",
     "supports-color": "^8.1.1",
     "supports-preserve-symlinks-flag": "^1.0.0",
     "tapable": "^2.2.1",
@@ -382,12 +379,16 @@
     "yocto-queue": "^1.0.0"
   },
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack server"
   },
   "keywords": [],
   "author": "",

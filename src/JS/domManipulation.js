@@ -6,6 +6,7 @@ import { showLoadingIndicator, hideLoadingIndicator } from "./loading.js";
 import { carouselInner, images, currentImageIndex, showNextImage } from "./index.js";
 
 
+
 let city = "";
 const summary = document.querySelector(".summary");
 const category = document.querySelector(".category");
