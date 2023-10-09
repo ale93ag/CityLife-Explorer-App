@@ -25,7 +25,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'CityLife Explorer',
-            template: './index.html'
+            template: './index.html',
+            favicon: "./src/Img/10927274-la-città-stilizzata-una-radura-con-alberi.png",
         }),
         new CopyWebpackPlugin({
             patterns: [{
