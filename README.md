@@ -18,4 +18,7 @@ CityLife Explorer è un'applicazione web che ti permette di scoprire il punteggi
 4. CityLife Explorer recupererà i dati relativi alla città e visualizzerà il punteggio totale e le informazioni dettagliate.
 
 ## Per vedere una demo del progetto in azione, puoi visitare il seguente link:
+https://ale93ag.github.io/CityLife-Explorer-App/
 
+## Per collaborare al progetto ecco il link dell'intero codice:
+https://github.com/ale93ag/CityLife-Explorer-App
